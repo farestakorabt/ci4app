@@ -1,0 +1,17 @@
+arborescence CI4
+app/Views/templates/methode...
+
+Blog::PostItem => pour appeler une methode
+
+all we want to display => put in view
+the controller orders to the view to display
+
+model deals with database
+view =< what we see on brawser (html)
+contoller decides which page to display, and model to load
+
+migration:
+php spark make:migration createArticleTable => to create migration 
+
+acces:
+database => app => config => database
