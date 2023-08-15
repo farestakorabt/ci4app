@@ -10,20 +10,21 @@ class CreateArticleTable extends Migration
     {
         $this->forge->addField([
             "id" => [
-                "type" => 'INT',
+                "type" => 'INT', // uppercase
                 "null" => 'false',
                 "auto_increment" => true,
             ],
             "title" => [
                 "type" => "VARCHAR",
-                "constraint" => 128,
+                "constraint" => 128, // caracters
                 "null" => false,
             ],
             "content" => [
-                "type" => "TEXT",
+                "type" => "TEXT", // can accept no values
                 "null" => true,
             ]
         ]);
+        
         $this->forge->addPrimaryKey("id");
 
         $this->forge->createTable("article");
