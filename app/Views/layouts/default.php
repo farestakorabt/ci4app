@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
+    <?php if(session("message")) : ?>
+        <h3><?= session("message") ?></h3>
+    <?php endif ?>
+
     <?= $this->renderSection('content') ?>
 
 </body>
