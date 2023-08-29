@@ -7,8 +7,14 @@
 
 <h1>Welcome to Udemy</h1>
 
-<?php
-// phpinfo();
-?>
+    <?php if(auth()->loggedIn()): ?>
+        
+        <a href="<?= url_to("logout") ?>">Log out</a>
+
+    <?php else: ?>
+
+        <a href="<?= url_to("login") ?>">Log in</a>
+
+    <?php endif; ?>
 
 <?= $this->endSection() ?>
