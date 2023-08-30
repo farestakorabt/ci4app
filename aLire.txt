@@ -17,3 +17,9 @@ acces:
 database => app => config => database
 
 dd(); => to debug => var_dump();
+
+
+
+
+commands:
+php spark =>

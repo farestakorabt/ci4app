@@ -43,6 +43,8 @@ $routes->resource("articles", ["placeholder" => "(:num)"]);
 
 service('auth')->routes($routes);
 
+$routes->get("set-password", "Password::set");
+$routes->post("set-password", "Password::update");
 /*
  * --------------------------------------------------------------------
  * Additional Routing

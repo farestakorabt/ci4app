@@ -30,7 +30,7 @@ class Auth extends ShieldAuth
      */
     public array $views = [
         'login'                       => '\CodeIgniter\Shield\Views\login',
-        'register'                    => '\CodeIgniter\Shield\Views\register',
+        'register'                    => '\App\Views\Auth\register',
         'layout'                      => '\CodeIgniter\Shield\Views\layout',
         'action_email_2fa'            => '\CodeIgniter\Shield\Views\email_2fa_show',
         'action_email_2fa_verify'     => '\CodeIgniter\Shield\Views\email_2fa_verify',
@@ -116,7 +116,8 @@ class Auth extends ShieldAuth
      * @var array<string, class-string<ActionInterface>|null>
      */
     public array $actions = [
-        'register' => \CodeIgniter\Shield\Authentication\Actions\EmailActivator::class,
+        // 'register' => \CodeIgniter\Shield\Authentication\Actions\EmailActivator::class,
+        'register' => null,
         'login'    => null,
     ];
 
