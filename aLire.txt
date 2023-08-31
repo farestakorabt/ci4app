@@ -23,3 +23,19 @@ dd(); => to debug => var_dump();
 
 commands:
 php spark =>
+
+migration:
+pour effectuer les migration vers la bdd
+
+dabord la commande:
+- php spark make:migration AddIndexToUsersCreatedAt --namespace Admin
+puis la migration:
+- php spark migrate
+
+pour verifier la migration => php spark migrate:status
+
+par default, seul les migration qui sont dans le "namespace" App sont executées, 
+alors pour Admin il faut preciser soit avec
+- php spark migrate -n Admin 
+ou: 
+- php spark migrate --all (better way)
