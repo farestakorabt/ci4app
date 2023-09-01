@@ -11,7 +11,36 @@
         <h3><?= session("message") ?></h3>
     <?php endif ?>
 
-    <?= $this->renderSection('content') ?>
+    <nav>
 
+        <a href="/">Home</a>
+
+        <?php if(auth()->loggedIn()): ?>
+
+            Hello <?= esc(auth()->user()->first_name) ?> <!-- esc() => htmlspecialchars(html)  -->
+
+            <a href="<?= url_to("articles") ?>">Articles</a>
+
+            <?php if(auth()->user()->inGroup("admin")) : ?>
+
+                <a href="<?= url_to("admin/users") ?>">Users</a>
+
+            <?php endif; ?>
+
+            <a href="<?= url_to("logout") ?>">Log out</a>
+
+        <?php else: ?>
+
+            <a href="<?= url_to("login") ?>">Log in</a>
+
+        <?php endif; ?>
+
+        <?php if(session()->has("error")) :?>
+            <p><?= session("error") ?></p>
+        <?php endif; ?>
+
+        <?= $this->renderSection('content') ?>
+
+    </nav>
 </body>
 </html>

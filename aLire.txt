@@ -39,3 +39,8 @@ alors pour Admin il faut preciser soit avec
 - php spark migrate -n Admin 
 ou: 
 - php spark migrate --all (better way)
+
+
+
+
+<!-- NB: should make underscore for Admin_hepler to load it auto -->

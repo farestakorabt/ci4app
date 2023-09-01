@@ -35,7 +35,7 @@ class Articles extends BaseController
     }
 
     public function new()
-    {
+    {        
         return view('Articles/new', [
             "article" => new ArticleModel
         ]);

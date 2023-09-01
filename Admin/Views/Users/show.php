@@ -14,7 +14,17 @@
     <dd><?= esc($user->first_name) ?></dd>
 
     <dt>Created</dt>
-    <dd><?= $user->created_at ?></dd>
+    <dd><?= $user->created_at->humanize() ?></dd>
+
+    <dt>Groups</dt>
+    <dd><?= implode(", ", $user->getGroups()) ?></dd>
+    <a href="<?= url_to("\Admin\Controllers\Users::groups", $user->id) ?>">Edit</a>
 </dl>
+
+<?= form_open("admin/users/" . $user->id . "/toggle-ban") ?>
+
+    <button><?= $user->isBanned() ? "Unban" : "Ban" ?></button>
+
+</form>
 
 <?= $this->endSection() ?>
