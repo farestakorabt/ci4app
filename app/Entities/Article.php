@@ -6,5 +6,8 @@
 
     class Article extends Entity
     {
-        
+       public function isOwner(): bool
+       {
+            return $this->users_id == auth()->user()->id;
+       } 
     }

@@ -15,6 +15,7 @@
 
     <label>
 
+        <!-- prevent to uncheck the current admin  -->
         <?php if($user->id === auth()->user()->id) : ?>
 
             <input type="checkbox" checked disabled>admin

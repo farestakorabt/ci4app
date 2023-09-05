@@ -27,4 +27,16 @@ class ArticleModel extends Model
             "max_length" => "{param} maximum characters for the {field}"
         ],
     ];
+
+    // insert article with the connected user id 
+    protected $beforeInsert = ["setUsersID"];
+
+    protected $useTimestamps = true;
+
+    protected function setUsersID(array $data)
+    {
+        $data["data"]['users_id'] = auth()->user()->id;
+
+        return $data;
+    }
 }

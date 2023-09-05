@@ -48,6 +48,9 @@ $routes->group("", ["filter" => "login"], static function ($routes) {
     $routes->get("articles/(:num)/delete", "Articles::confirmDelete/$1");
     
     $routes->resource("articles", ["placeholder" => "(:num)"]);
+
+    $routes->get("articles/(:num)/image/edit", "Article\Image::new/$1");
+    $routes->post("articles/(:num)/image/create", "Article\Image::create/$1");
 });
 
 /*
