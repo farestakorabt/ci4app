@@ -44,3 +44,6 @@ ou:
 
 
 <!-- NB: should make underscore for Admin_hepler to load it auto -->
+
+by default files are uploaded to : 
+writable/uploads/
