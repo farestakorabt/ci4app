@@ -1,0 +1,1312 @@
+html,
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 1% 2% 0 2%;
+}
+/* 
+  sharedPages
+*/
+.sharedAffichageGeneral {
+  margin-top: 1vw;
+}
+.sharedRowCount {
+  margin-top: 1vw;
+}
+.sharedToggleContainer {
+  font-size: 0.9vw;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  margin-bottom: 0.5vw;
+}
+.sharedToggleLabel {
+  margin-left: 0.8vw;
+  margin-bottom: 0;
+  font-size: 0.85vw;
+}
+.sharedCard:last-child {
+  margin-top: 0.5vw;
+}
+.sharedAddDiv {
+  border: rgb(201, 201, 201) solid 0.2px;
+  box-shadow: 0 0 15px rgb(201, 201, 201);
+  border-radius: 0.45vw;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 1.4vw 2vw 1.4vw 2vw;
+  margin-bottom: 1%;
+}
+.sharedCard:nth-last-child(2) {
+  margin-top: 0.5vw;
+}
+.sharedButtons {
+  margin-top: 0.3vw;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.sharedButtonsPreviousPage button {
+  padding: 1vw;
+}
+.sharedImageEdit,
+.sharedImageDelete,
+.sharedImageCopier {
+  width: 1.3vw;
+  height: 1.3vw;
+  /* border: blue 1px dashed; */
+}
+.sharedPreviousPage {
+  float: left;
+}
+.sharedRequestLists,
+.sharedRequestListsDemandes {
+  min-width: 100vw;
+  background-color: rgba(206, 219, 236, 0.715);
+  padding: 3% 5% 0 5%;
+  min-height: 100vh;
+}
+.sharedRequestList,
+.sharedRequestListDemandes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2vw;
+  justify-content: space-between;
+}
+.sharedRequestListsH3,
+.sharedRequestListsH3Demandes {
+  text-align: center;
+  font-size: 1.6vw;
+}
+.sharedOneRequest p {
+  margin-bottom: 0;
+}
+.sharedsRequestTableRow {
+  cursor: pointer;
+}
+.sharedOneRequest td:nth-child(n) {
+  width: 50vw;
+  overflow: hidden;
+  height: 2vw;
+  text-align: center;
+}
+.sharedOneRequest {
+  margin-top: 1.5vw;
+}
+.sharedOneRequest th:nth-child(n):not(:nth-child(2)) {
+  background-color: rgba(142, 140, 140, 0.852);
+  color: white;
+  width: 50%;
+  text-align: start;
+  overflow: hidden;
+}
+.sharedReqButtonsDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5vw;
+}
+.sharedRequestNumberDiv {
+  display: flex;
+  align-items: center;
+  margin-top: 3vw;
+}
+.sharedRequestNumber {
+  margin-top: 1vw;
+  text-align: center;
+  margin-bottom: 1vw;
+  margin-left: 20%;
+  font-size: 1.2vw;
+}
+.errorPage,
+.sharedPModificationPage {
+  min-height: 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sharedTitreForm {
+  text-align: start;
+  width: 37vw;
+}
+.sharedButtonsDiv,
+.sharedBackAndQuit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2.5vw;
+}
+.sharedFiltres {
+  display: block;
+  width: 25%;
+  height: calc(1.5vw + 0.75vw + 2px);
+  padding: 0.375vw 1.75vw 0.375vw 0.75vw;
+  font-size: 1vw;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: rgb(201, 201, 201) solid 0.2px;
+  border-radius: 0.25vw;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  min-width: 20vw;
+}
+.adminsReqBackButton,
+.sharedMesDemandesMonCompteButton {
+  margin-right: 3.5vw;
+}
+.sharedUniteTitreFormAddButton {
+  width: 100%;
+}
+.gestionDesUnitesReferent {
+  margin-bottom: 0;
+}
+.gestionDesUnitesAjouter a {
+  color: white !important;
+}
+.gestionDesUnitesAjouter a:hover {
+  text-decoration: none;
+}
+.sharedGestionDesUnitesForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gestionDesUnitesReferent {
+  display: flex;
+  flex-direction: column;
+}
+.gestionDesUnitesReferent label {
+  margin-bottom: 0;
+  margin-left: 0.2vw;
+}
+.gestionDesUnitesReferent input,
+#entite_id,
+#statut_id {
+  width: 100%;
+}
+input {
+  margin: 0.5vw 0;
+}
+.form-control:focus {
+  font-size: 0.85vw;
+}
+.button {
+  margin-top: 1vw;
+}
+.sharedH2 {
+  font-size: 1.66vw;
+}
+.sharedH4 {
+  font-size: 1.25vw;
+}
+.sharedH5 {
+  font-size: 1.05vw;
+  font-size: 1.3vw;
+  line-height: 1.8vw;
+  margin-bottom: 2vw;
+}
+.btn-primary {
+  font-size: 0.9vw;
+  min-width: 10vw;
+  height: 2.1vw;
+  padding: 0.35vw 1vw;
+}
+.btn-primary:hover {
+  color: white !important;
+}
+
+.sharedLi,
+strong {
+  font-size: 0.95vw;
+}
+p,
+label {
+  font-size: 0.83vw;
+}
+hr {
+  background-color: rgb(160, 154, 154);
+  opacity: 0.3;
+  width: 80%;
+  margin-left: 10%;
+}
+input {
+  border-radius: 0.2vw;
+  border: none;
+}
+input[type="checkbox"] {
+  width: 1vw;
+}
+
+.passwordList {
+  margin-top: 0.5vw;
+  padding-left: 1vw;
+}
+.passwordListLI {
+  font-size: 0.85vw;
+}
+
+.alert-danger {
+  font-size: 1vw;
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+  justify-content: center;
+}
+
+.list-group-item {
+  padding: 0.5vw 1vw;
+}
+.list-group-item:hover {
+  color: white;
+  background-color: #345578;
+  transition: background-color 0.3s ease;
+}
+.accordion-item:first-of-type .accordion-button {
+  border: #385a7f solid 1px;
+}
+.accordion-item {
+  min-width: 25vw;
+  margin-bottom: 1vw;
+}
+.accordion-button {
+  display: block;
+  font-size: 1vw;
+  padding: 0.85vw 0 0.85vw 2vw;
+}
+.accordion-button:not(.collapsed)::after {
+  height: 1.2vw;
+}
+.sharedUniteTitreFormAddButton {
+  background-color: #385a7f;
+  border-radius: 0.3vw;
+  height: 2.5vw;
+  color: white;
+  font-size: 1vw;
+  border: none;
+  margin-top: 0.5vw;
+}
+.accordion {
+  margin-top: 2vw;
+}
+.table th {
+  font-size: 0.9vw;
+}
+.align-items-center {
+  display: flex;
+  justify-content: space-between;
+}
+.form-control,
+.form-control[readonly] {
+  font-size: 0.9vw;
+}
+.col-form-label {
+  font-size: 0.9vw;
+}
+.table.table-hover {
+  border: rgb(201, 201, 201) solid 0.2px;
+  margin-top: 1.5vw;
+}
+.table thead th {
+  background-color: rgba(142, 140, 140, 0.852);
+  color: white;
+  text-align: center;
+}
+.table td,
+.table th {
+  padding: 0.8vw;
+  font-size: 0.9vw;
+  text-align: center;
+  min-height: 5vw;
+  cursor: pointer;
+}
+
+/* indexPage  */
+.indexGeneralDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2vw;
+  border: rgb(201, 201, 201) solid 0.2px;
+  border-radius: 0.8vw;
+  box-shadow: 0 0 15px rgb(201, 201, 201);
+  background-color: #dce5f1;
+  min-height: 20vw;
+  width: 55vw;
+}
+.indexPage {
+  padding-left: 5vw;
+}
+.indexPageH1 {
+  font-size: 2vw;
+  text-align: center;
+}
+.indexPageParagraphe {
+  line-height: 1.8vw;
+  font-size: 1vw;
+  width: 90%;
+}
+.indexPagedivButton {
+  text-align: center;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+/* connexionPage */
+.connexionPage {
+  border: rgb(201, 201, 201) solid 0.2px;
+  box-shadow: 0 0 15px rgb(201, 201, 201);
+  border-radius: 1vw;
+  padding: 2vw 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(206, 219, 236, 0.715);
+  min-width: 50%;
+  justify-content: space-between;
+  margin-top: 2vw;
+}
+.connexionPageMdpLabel,
+.connexionPageNomLabel {
+  width: 100%;
+  text-align: start;
+}
+.connexionPageH1 {
+  font-size: 2vw;
+}
+.connexionPageForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  height: 100%;
+  min-width: 100%;
+  padding: 1vw;
+}
+.connexionPageForgotPasswordALink {
+  font-size: 1vw;
+}
+.connexionPageInputs {
+  min-height: 7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.connexionPage p {
+  font-size: 1.2vw;
+  margin-bottom: 0;
+  margin-top: 1vw;
+}
+.connexionPage h3 {
+  font-size: 2vw;
+}
+.connexionPageButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#connexionPageButton,
+#sendButton {
+  font-size: 1vw;
+  width: 13vw;
+  background-color: #385a7f;
+  color: white;
+}
+.connexionPageRemember {
+  width: 53%;
+  display: flex;
+}
+.connexionPageRememberLabel {
+  font-size: 0.9vw;
+  width: 45%;
+  margin-top: 0.5vw;
+}
+.sharedDiv,
+.connexionPageGeneral {
+  background-color: rgba(206, 219, 236, 0.715);
+  height: 100vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.8;
+}
+.sharedDiv {
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+.connexionPageGeneral {
+  background-color: white;
+}
+/* adminPage  */
+.adminApplicationBody {
+  text-align: center;
+}
+.adminApplicationBody .btn.btn-primary {
+  padding-top: 0.5vw;
+  padding-bottom: 1.6vw;
+  font-size: 0.85vw;
+  margin-bottom: 0;
+}
+/* inscriptionPage  */
+.inscriptionTitle {
+  font-size: 1.8vw;
+  text-align: center;
+  padding-top: 1.5vw;
+  margin-bottom: -1vw;
+}
+/* forgotPasswordPage  */
+.forgotPasswordH1 {
+  font-size: 1.3vw;
+  margin-bottom: 0;
+}
+.forgotPasswordGeneralDiv {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.forgotPassword {
+  background-color: rgba(206, 219, 236, 0.715);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: rgb(201, 201, 201) solid 0.2px;
+  box-shadow: 0 0 15px rgb(201, 201, 201);
+  border-radius: 0.8vw;
+  margin-top: 2vw;
+  min-width: 45vw;
+  min-height: 17vw;
+}
+.forgotPasswordForm {
+  border-radius: 0.8vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: center;
+  min-width: 50%;
+}
+.forgotPasswordDiv {
+  background-color: firebrick;
+}
+.sharedAddDiv .sharedButtons {
+  width: 100%;
+  margin-top: 1.5vw;
+}
+.sharedAddDiv .btn.btn-primary {
+  margin-bottom: 0;
+}
+/* resetPasswordPage  */
+#resetPassword.btn.btn-primary {
+  padding-left: 4vw;
+  padding-right: 4vw;
+  margin-top: 0.5vw;
+}
+#resetPassword {
+  width: 100%;
+}
+.resetPasswordPageGeneralDiv {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.resetPasswordForm {
+  border-radius: 0.8vw;
+  min-width: 30vw;
+  display: flex;
+  flex-direction: column;
+}
+.resetPasswordH1 {
+  font-size: 1.3vw;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+.resetPasswordButton {
+  margin-top: 1vw;
+}
+
+/* 
+sharedDiv
+  */
+.sharedDivTitleAndButton {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.3vw;
+  justify-content: space-between;
+}
+.sharedDivLastButtons {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 1.5vw;
+}
+.informationsPrealabesLastButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* demandeInformationsPage  */
+.demandeInformationsContexte {
+  width: 100%;
+  height: 10vw;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+#contexte {
+  height: 100%;
+  padding-left: 1vw;
+}
+#suggestion {
+  visibility: hidden;
+}
+.demandeInformationsAdresseNomenclature {
+  font-size: 1vw;
+  margin-bottom: 1vw;
+  margin-top: -2%;
+}
+.demandeInformationsTitleAndButton {
+  margin-bottom: 1%;
+}
+.demandeInformationsLastButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.demandeInformationsAdresseACreerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1%;
+  margin-top: -2%;
+}
+.demandeInformationsAdresseACreerLabel {
+  font-size: 1vw;
+  color: black;
+  margin-bottom: 0;
+}
+.adresse_a_creerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contexteInfoP {
+  font-size: 1vw;
+  margin-top: 1vw;
+}
+#adresseACreerLabel,
+.adresseNomenclatureLien {
+  font-size: 1vw;
+}
+.adresseNomenclatureLien {
+  margin-top: 1vw;
+}
+#adresse_a_creer {
+  width: 40%;
+  height: 2.5vw;
+  padding-left: 1vw;
+  font-size: 1vw;
+}
+.informationsRelativesLastButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vw;
+}
+#demandeInformationsAdresseACreer {
+  border: rgb(201, 201, 201) solid 0.2px;
+  font-size: 1vw;
+  height: 2.3vw;
+  width: 30vw;
+  padding-left: 0.8vw;
+}
+.categorie_titre_div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5vw;
+}
+/*  gestionDesMembresPage */
+.gestionDesMembresStatutLabel,
+.gestionDesUnitesLabel {
+  margin-bottom: 0.6vw !important;
+  margin-top: 0.3vw !important;
+}
+.gestionDesMembresStatutLabel {
+  margin-top: 0.6vw !important;
+}
+.gestionDesMembresAjouterMembreForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gestionDesMembresAjouterMembreDiv {
+  width: 35vw;
+}
+.gestionDesMembresModoficationMembreGeneralDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 50%;
+  height: 50vw;
+}
+.gestionDesMembresBackAndQuit {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.gestionDesMembresModoficationMembreDiv {
+  min-width: 35vw;
+}
+.gestionDesMembresButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5vw;
+}
+/* gestionDesCategories & gestionDesEntites  */
+#sharedAccordionExample {
+  width: 30vw;
+}
+.sharedAccordionExample button {
+  font-size: 1vw;
+}
+.sharedUniteTitreInput {
+  margin-bottom: 1vw;
+  width: 100%;
+}
+.categorie_titreForm {
+  width: 37vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1vw;
+}
+#categorie_titre {
+  margin-bottom: -8vw;
+}
+.newCategorieTitle {
+  font-size: 1vw;
+  text-align: start;
+  margin-bottom: 0;
+}
+.categorieTitreButton {
+  width: 100%;
+}
+/* demandeValidationPage  */
+.demandeValidationDiv {
+  padding: 2vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 15vw;
+}
+.demandeValidationDiv h3 {
+  margin-right: 3vw;
+}
+.demandeValidationButtons {
+  display: flex;
+  justify-content: space-around;
+}
+/* gestionDesDemandesPage  */
+.gestionDesDemandesInsideDiv {
+  width: 50%;
+  margin-top: 2vw;
+  min-height: 23vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: rgb(201, 201, 201) solid 0.2px;
+  box-shadow: 0 0 15px rgb(201, 201, 201);
+  border-radius: 0.3vw;
+  margin-left: 25%;
+  padding: 2vw;
+}
+.gestionDesDemandesInsideDiv p {
+  width: 84%;
+  font-size: 1vw;
+  text-align: start;
+  margin-top: 1vw;
+}
+.gestionDesDemandesReferentSearch {
+  display: flex;
+  align-items: center;
+}
+#gestionDesDemandesReferentSearchBtn {
+  width: 10vw;
+  margin-left: 0.5vw;
+}
+/* errorPage  */
+.errorPageTitle {
+  font-size: 1.2vw;
+}
+.errorPage a {
+  margin-top: 1vw;
+}
+.errorPageButtons {
+  min-width: 50vw;
+  display: flex;
+  justify-content: space-between;
+}
+/* nomenclaturePage  */
+.nomenclatureGeneralDiv {
+  width: 65vw;
+  padding: 3vw;
+  margin-left: 12vw;
+}
+.nomenclatureLastP {
+  font-size: 0.95vw;
+}
+.nomenclatureH1 {
+  font-size: 2vw;
+  margin-bottom: 1.5vw;
+}
+.nomenclaturePrefixes,
+.nomenclaturePrefixesAdresseRalatives {
+  font-size: 1.5vw;
+  color: #3e648d;
+}
+
+/* demandeEnvoyeePage  */
+.demandeEnvoyeeNewRequest {
+  background-color: rgba(206, 219, 236, 0.715);
+  width: 80%;
+  padding: 1vw 3vw 2vw 3vw;
+  margin-left: 5%;
+}
+.modifactionRequestParagraphe,
+.demandeEnvoyeeNewRequestParagraphe {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  font-size: 0.87vw;
+}
+.modifactionRequestParagraphe,
+.demandeEnvoyeeNewRequestParagraphe {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  font-size: 0.87vw;
+}
+.demandeEnvoyee {
+  min-height: 10vw;
+  width: 60%;
+  margin-left: 19%;
+  margin-top: 5%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.demandeEnvoyeeTitle {
+  font-size: 1.5vw;
+}
+.demandeEnvoyeeButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+.demandeEnvoyeeButtons a {
+  margin-left: 1vw;
+}
+/* 
+informationsRelatives
+*/
+.informationsRelatives {
+  background-color: rgba(206, 219, 236, 0.715);
+  padding: 4vw 20vw 2vw 20vw;
+  min-height: 100vh;
+}
+.informationsRelativesIntroP {
+  font-size: 1vw;
+}
+/* 
+informationPrealables
+*/
+.informationPrealablesTitleAndButton,
+.demandeInformationsTitleAndButton {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vw;
+  width: 100%;
+}
+.informationPrealablesTitleAndButton {
+  display: flex;
+}
+/* 
+  header 
+*/
+.navList {
+  list-style-type: none;
+  display: flex;
+}
+.deleteAnswers {
+  margin-left: 1.5vw;
+}
+.navbar-expand-lg {
+  background-color: #2c3e50 !important;
+  color: white !important;
+  height: 3vw;
+}
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white;
+}
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: #18bc9c;
+}
+.navbar-expand-lg .navbar-collapse {
+  padding-left: 25vw;
+}
+.navbar-brand {
+  font-size: 1.1vw;
+}
+#quitWithoutAnswer {
+  padding-left: 3vw;
+}
+#accordionExample {
+  width: 100%;
+}
+div.alert.alert-success.text-center {
+  width: 50vw;
+  font-size: 0.95vw;
+  margin-left: 25%;
+}
+.notification,
+.sharedGestionNotification {
+  color: white;
+  background-color: #6dbc97;
+  min-height: 2vw;
+  font-size: 1vw;
+  padding: 0.2vw;
+  margin-bottom: 1vw;
+  text-align: center;
+}
+.erreur,
+.sharedGestionErreur {
+  background-color: rgb(219, 217, 217);
+  color: rgb(212, 73, 13);
+  min-height: 2vw;
+  /* max-width: 50vw; */
+  font-size: 1vw;
+  padding: 0.2vw;
+  text-align: center;
+}
+/* footerPage  */
+#nextPage {
+  font-size: 0.9vw;
+  min-width: 10vw;
+  height: 2.1vw;
+  padding: 0.35vw 1vw;
+  color: white;
+  filter: none;
+  border: 1px solid #345578;
+  background-image: linear-gradient(#6d94bf, #446e9b 50%, #3e648d);
+}
+#nextPage:hover {
+  background: #3e648d;
+}
+/*
+  footer
+ */
+.footButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 2vw;
+}
+#nextPage {
+  float: right;
+  margin-top: 1vw;
+}
+.paragraphePrincipal {
+  line-height: 1vw;
+}
+.labelConfirm {
+  width: 100%;
+  text-align: start;
+}
+.newRefNotif {
+  color: red;
+  font-size: 1vw;
+  margin-bottom: 0.5vw;
+}
+/* contenuPage  */
+.referentChoice3 {
+  background-color: rgb(225, 224, 224) !important;
+  max-height: 13vw;
+  overflow-y: auto;
+  z-index: auto;
+}
+
+/* -------------------------------------------------- */
+
+/* responsive mobile  */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    min-height: 100vw;
+  }
+  .sharedImageEdit,
+  .sharedImageDelete,
+  .sharedImageCopier {
+    width: 2vw;
+    height: 2vw;
+  }
+  .sharedRequestLists,
+  .sharedRequestListsDemandes {
+    padding: 3% 3% 0 2%;
+  }
+  .sharedRequestLists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sharedOneRequest {
+    min-width: 95vw;
+  }
+  .sharedRequestListsH3,
+  .sharedRequestListsH3Demandes {
+    font-size: 4.5vw;
+    margin-top: 1vw;
+  }
+  .nomenclatureGeneralDiv {
+    width: 85vw;
+    margin-left: 0;
+  }
+  .nomenclatureLastP {
+    font-size: 1.6vw;
+  }
+  .sharedRequestListDemandes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    min-height: 15vw;
+  }
+  .adminGeneralContainer .sharedRequestList,
+  .adminApplicationBody .sharedRequestList,
+  .sharedRequestList {
+    flex-direction: column;
+    min-width: 50vw;
+  }
+
+  .table th,
+  .table td,
+  .table p,
+  .passwordListLI {
+    font-size: 1.8vw;
+  }
+  .table td,
+  .table th {
+    padding: 0.5vw;
+    font-size: 2.2vw;
+  }
+  .list-group-item {
+    font-size: 2vw;
+  }
+  .sharedRequestNumberDiv {
+    justify-content: space-around;
+    margin-top: 0;
+  }
+  .sharedRequestNumber {
+    font-size: 3vw;
+    margin-left: 0;
+  }
+  .sharedRequestToHide {
+    display: none;
+  }
+  .sharedPModificationPage {
+    height: 100vh;
+  }
+  .sharedTitreForm,
+  .categorie_titreForm,
+  .gestionDesMembresAjouterMembreDiv,
+  .sharedAddDiv {
+    width: 70vw;
+  }
+  .sharedAddDiv {
+    width: 80vw;
+    padding: 4vw 4vw 6vw 4vw;
+  }
+  .sharedAddDiv .sharedButtons {
+    margin-top: 2.5vw;
+    height: 4vw;
+  }
+
+  .sharedFiltres {
+    width: 40vw;
+    height: 6vw;
+    font-size: 3vw;
+  }
+  .sharedH4,
+  .sharedH5,
+  .gestionDesMembresModoficationMembreLabel,
+  #statut_id.form-control,
+  .newCategorieTitle,
+  .sharedToggleLabel {
+    font-size: 2.5vw;
+    margin-left: 2vw;
+  }
+  .sharedH5 {
+    line-height: 1.5;
+  }
+  .form-control:focus {
+    font-size: 1.8vw;
+  }
+  #categorie_titre {
+    font-size: 2.2vw;
+  }
+  .sharedH4 {
+    line-height: 1.8;
+  }
+  #statut_id.form-control {
+    margin-left: 0;
+  }
+  .sharedToggleContainer {
+    margin-top: 2vw;
+  }
+  .btn-primary {
+    font-size: 0.6rem;
+    min-width: 25vw;
+    padding-top: 0.6vw;
+    padding-bottom: 3.8vw;
+  }
+  .contextDiv {
+    margin-top: -3vw;
+  }
+  .accordion-button {
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    font-size: 2.2vw;
+  }
+  .sharedUniteTitreFormAddButton {
+    height: 5.5vw;
+    font-size: 2.5vw;
+  }
+  .indexGeneralDiv {
+    border-radius: 1.5vw;
+    height: 55vw;
+    width: 75vw;
+  }
+  .indexPageParagraphe {
+    font-size: 0.6rem;
+    line-height: 1.5;
+  }
+  .connexionPage {
+    padding: 2vw 3vw;
+    min-width: 80vw;
+    min-height: 75vw;
+  }
+  .connexionPageMdpLabel,
+  .connexionPageNomLabel,
+  .connexionPageForgotPasswordALink,
+  input[type="checkbox"] {
+    font-size: 3vw;
+  }
+  input[type="checkbox"] {
+    width: 2.5vw;
+  }
+  #resetPassword.btn.btn-primary {
+    font-size: 3vw;
+    height: 6vw;
+  }
+  .resetPasswordH1 {
+    font-size: 3vw;
+  }
+  .connexionPageRemember {
+    margin-top: -3vw;
+  }
+  .connexionPageRememberLabel {
+    font-size: 3vw;
+    width: 67%;
+    margin-top: 2vw;
+  }
+  .connexionPageGeneral {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .sharedDiv {
+    padding: 0 10vw;
+  }
+  .forgotPasswordH1,
+  .connexionPageH1,
+  .sharedH2 {
+    font-size: 4vw;
+  }
+  .indexPageH1 {
+    font-size: 1rem;
+  }
+  .connexionPageForm {
+    justify-content: space-evenly;
+  }
+  .forgotPasswordForm {
+    width: 75vw;
+    min-height: 38vw;
+    padding: 4vw;
+    justify-content: space-between;
+  }
+  .demandeInformationsContexte {
+    min-height: 25vw;
+  }
+  .demandeInformationsContexte label {
+    margin-top: 2vw;
+  }
+  .adresse_a_creerDiv {
+    margin-bottom: 2vw;
+  }
+  .contexteInfoP {
+    font-size: 2.2vw;
+    margin-top: 1.5vw;
+  }
+  #adresseACreerLabel,
+  #contexte::placeholder,
+  .adresseNomenclatureLien,
+  .informationsRelatives label,
+  .sharedLi,
+  strong,
+  label,
+  .form-control,
+  .form-control[readonly] {
+    font-size: 2.2vw;
+  }
+  .sharedUl {
+    line-height: 1.7;
+  }
+  #contexte {
+    font-size: 2vw;
+  }
+  .form-control {
+    margin-top: 2vw;
+    min-height: 6vw;
+  }
+
+  .adresseNomenclatureLien a {
+    margin-top: 4.5vw;
+  }
+  #adresse_a_creer {
+    height: 4.3vw;
+    font-size: 2vw;
+    width: 40vw;
+    padding-left: 2vw;
+  }
+  .gestionDesMembresAjouterMembreDiv .gestionMembresLabel {
+    font-size: 1.4vw;
+  }
+  .gestionDesMembresModoficationMembreForm {
+    height: 25vw;
+    min-width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .gestionDesMembresButtons {
+    margin-bottom: 0;
+    margin-top: 2vw;
+  }
+  #sharedAccordionExample {
+    min-width: 55vw;
+  }
+  .sharedRequestListsDemandes .btn.btn-primary,
+  .sharedRequestLists .btn.btn-primary {
+    padding-top: 0.6vw;
+    padding-bottom: 4vw;
+    font-size: 2.5vw;
+    margin-bottom: 1.5vw;
+  }
+  .sharedRequestListsDemandes .btn.btn-primary {
+    margin-bottom: 1.5vw;
+  }
+  .sharedRequestList .btn.btn-primary {
+    margin-top: 4vw;
+  }
+  .gestionDesDemandesInsideDiv {
+    width: 76vw;
+    margin-left: 0;
+    min-height: 50vh;
+  }
+  .gestionDesDemandesInsideDiv label {
+    font-size: 1.4vw;
+  }
+  #gestionDesDemandesReferentSearchBtn {
+    margin-bottom: 0;
+  }
+  .demandeEnvoyee {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .demandeEnvoyeeTitle {
+    font-size: 3vw;
+  }
+  .demandeEnvoyeeButtons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    min-height: 15vw;
+  }
+  .informationsRelatives {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10vw;
+  }
+  .informationsRelativesIntroP {
+    font-size: 2.5vw;
+    margin-bottom: 0;
+  }
+  .notification,
+  .sharedGestionNotification {
+    min-height: 5vw;
+    /* min-width: 80%; */
+    font-size: 2.5vw;
+    margin-left: 0;
+    margin-top: 2vw;
+  }
+  .erreur,
+  .sharedGestionErreur {
+    min-height: 5vw;
+    /* max-width: 80vw; */
+    font-size: 2.5vw;
+    margin-left: 0;
+    margin-top: 2vw;
+  }
+  .sharedGestionNotification,
+  .sharedGestionErreur {
+    margin-top: 50%;
+    margin-bottom: 5%;
+  }
+  .sharedUniteTitreFormAddButton {
+    font-size: 3.5vw;
+  }
+  .adminApplicationBody .btn.btn-primary {
+    width: 80vw;
+    padding-bottom: 5vw;
+    padding-top: 1vw;
+  }
+  .informationsPrealabesGeneralDiv {
+    line-height: 1.8;
+  }
+}

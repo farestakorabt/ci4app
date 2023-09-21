@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class AddFirstNameToUserTable extends Migration
+class AddFirstNameToUsersTable extends Migration
 {
     public function up()
     {

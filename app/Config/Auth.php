@@ -8,6 +8,7 @@ use CodeIgniter\Shield\Config\Auth as ShieldAuth;
 use CodeIgniter\Shield\Authentication\Actions\ActionInterface;
 use CodeIgniter\Shield\Authentication\AuthenticatorInterface;
 use CodeIgniter\Shield\Authentication\Authenticators\AccessTokens;
+use CodeIgniter\Shield\Authentication\Authenticators\HmacSha256;
 use CodeIgniter\Shield\Authentication\Authenticators\JWT;
 use CodeIgniter\Shield\Authentication\Authenticators\Session;
 use CodeIgniter\Shield\Authentication\Passwords\CompositionValidator;
@@ -116,7 +117,6 @@ class Auth extends ShieldAuth
      * @var array<string, class-string<ActionInterface>|null>
      */
     public array $actions = [
-        // 'register' => \CodeIgniter\Shield\Authentication\Actions\EmailActivator::class,
         'register' => null,
         'login'    => null,
     ];
@@ -135,6 +135,7 @@ class Auth extends ShieldAuth
     public array $authenticators = [
         'tokens'  => AccessTokens::class,
         'session' => Session::class,
+        'hmac'    => HmacSha256::class,
         // 'jwt'     => JWT::class,
     ];
 
@@ -148,6 +149,7 @@ class Auth extends ShieldAuth
      */
     public array $authenticatorHeader = [
         'tokens' => 'Authorization',
+        'hmac'   => 'Authorization',
     ];
 
     /**
@@ -182,6 +184,7 @@ class Auth extends ShieldAuth
     public array $authenticationChain = [
         'session',
         'tokens',
+        'hmac',
         // 'jwt',
     ];
 

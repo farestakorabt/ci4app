@@ -38,6 +38,8 @@ $routes->setAutoRoute(false);
 // $routes->delete("articles/(:num)", "Articles::delete/$1");
 $routes->get('/', 'Home::index');
 
+$routes->get("setup", "Setup::index");
+
 service('auth')->routes($routes);
 
 $routes->group("", ["filter" => "login"], static function ($routes) {    
